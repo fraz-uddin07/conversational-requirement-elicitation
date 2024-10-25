@@ -1,0 +1,70 @@
+{
+    "report_types": [
+      "Financial Summary",
+      "Expense Report",
+      "Revenue Analysis",
+      "Customer Demographics"
+    ],
+    "visualization_types": [
+      "Bar Chart",
+      "Pie Chart",
+      "Line Graph",
+      "Scatter Plot",
+      "Heat Map"
+    ],
+    "filters": {
+      "date_range": true,
+      "departments": [
+        "Underwriting",
+        "Claims",
+        "Actuarial",
+        "Sales and Marketing",
+        "Customer Service",
+        "Policy Administration",
+        "Finance and Accounting",
+        "Legal and Compliance",
+        "IT",
+        "HR",
+        "Risk Management",
+        "Reinsurance",
+        "Product Development"
+      ],
+      "regions": [
+        "North",
+        "South",
+        "East",
+        "West",
+        "International"
+      ]
+    },
+    "sub_reports": [
+      "Department Breakdown",
+      "Product Line Details",
+      "Monthly Trends"
+    ],
+    "graph_options": {
+      "color_scheme": ["Blue", "Green", "Red"],
+      "3d_effect": [true, false],
+      "interactive": [true, false]
+    },
+    "data_fields": [
+      "Total Sales",
+      "Number of Policies",
+      "Claim Amounts",
+      "Customer Satisfaction Score"
+    ],
+    "delivery_formats": [
+      "PDF",
+      "Excel",
+      "Interactive Dashboard"
+    ],
+    "frequency": [
+      "One-time",
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Quarterly",
+      "Annually"
+    ]
+  }
+  
