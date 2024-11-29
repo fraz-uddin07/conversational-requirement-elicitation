@@ -1,70 +1,76 @@
 {
-    "report_types": [
-      "Financial Summary",
-      "Expense Report",
-      "Revenue Analysis",
-      "Customer Demographics"
+  "name": "Default Meta Model",
+  "report_types": [
+    { "id": "financial_summary", "label": "Financial Summary" },
+    { "id": "expense_report", "label": "Expense Report" },
+    { "id": "revenue_analysis", "label": "Revenue Analysis" },
+    { "id": "customer_demographics", "label": "Customer Demographics" }
+  ],
+  "visualization_types": [
+    { "id": "bar_chart", "label": "Bar Chart" },
+    { "id": "pie_chart", "label": "Pie Chart" },
+    { "id": "line_graph", "label": "Line Graph" },
+    { "id": "scatter_plot", "label": "Scatter Plot" },
+    { "id": "heat_map", "label": "Heat Map" }
+  ],
+  "filters": {
+    "date_range": true,
+    "departments": [
+      { "id": "underwriting", "label": "Underwriting" },
+      { "id": "claims", "label": "Claims" },
+      { "id": "actuarial", "label": "Actuarial" },
+      { "id": "sales_marketing", "label": "Sales and Marketing" },
+      { "id": "customer_service", "label": "Customer Service" },
+      { "id": "policy_admin", "label": "Policy Administration" },
+      { "id": "finance_accounting", "label": "Finance and Accounting" },
+      { "id": "legal_compliance", "label": "Legal and Compliance" },
+      { "id": "it", "label": "IT" },
+      { "id": "hr", "label": "HR" },
+      { "id": "risk_management", "label": "Risk Management" },
+      { "id": "reinsurance", "label": "Reinsurance" },
+      { "id": "product_development", "label": "Product Development" }
     ],
-    "visualization_types": [
-      "Bar Chart",
-      "Pie Chart",
-      "Line Graph",
-      "Scatter Plot",
-      "Heat Map"
-    ],
-    "filters": {
-      "date_range": true,
-      "departments": [
-        "Underwriting",
-        "Claims",
-        "Actuarial",
-        "Sales and Marketing",
-        "Customer Service",
-        "Policy Administration",
-        "Finance and Accounting",
-        "Legal and Compliance",
-        "IT",
-        "HR",
-        "Risk Management",
-        "Reinsurance",
-        "Product Development"
-      ],
-      "regions": [
-        "North",
-        "South",
-        "East",
-        "West",
-        "International"
-      ]
-    },
-    "sub_reports": [
-      "Department Breakdown",
-      "Product Line Details",
-      "Monthly Trends"
-    ],
-    "graph_options": {
-      "color_scheme": ["Blue", "Green", "Red"],
-      "3d_effect": [true, false],
-      "interactive": [true, false]
-    },
-    "data_fields": [
-      "Total Sales",
-      "Number of Policies",
-      "Claim Amounts",
-      "Customer Satisfaction Score"
-    ],
-    "delivery_formats": [
-      "PDF",
-      "Excel",
-      "Interactive Dashboard"
-    ],
-    "frequency": [
-      "One-time",
-      "Daily",
-      "Weekly",
-      "Monthly",
-      "Quarterly",
-      "Annually"
+    "regions": [
+      { "id": "north", "label": "North" },
+      { "id": "south", "label": "South" },
+      { "id": "east", "label": "East" },
+      { "id": "west", "label": "West" },
+      { "id": "international", "label": "International" }
     ]
-  }
-  
+  },
+  "sub_reports": [
+    { "id": "department_breakdown", "label": "Department Breakdown" },
+    { "id": "product_line_details", "label": "Product Line Details" },
+    { "id": "monthly_trends", "label": "Monthly Trends" }
+  ],
+  "graph_options": {
+    "color_schemes": [
+      { "id": "blue", "label": "Blue" },
+      { "id": "green", "label": "Green" },
+      { "id": "red", "label": "Red" }
+    ],
+    "effects": [
+      { "id": "3d_effect", "label": "3D Effect", "enabled": [true, false] },
+      { "id": "interactive", "label": "Interactive", "enabled": [true, false] }
+    ]
+  },
+  "data_fields": [
+    { "id": "total_sales", "label": "Total Sales" },
+    { "id": "number_of_policies", "label": "Number of Policies" },
+    { "id": "claim_amounts", "label": "Claim Amounts" },
+    { "id": "customer_satisfaction_score", "label": "Customer Satisfaction Score" }
+  ],
+  "delivery_formats": [
+    { "id": "pdf", "label": "PDF" },
+    { "id": "excel", "label": "Excel" },
+    { "id": "dashboard", "label": "Interactive Dashboard" }
+  ],
+  "frequency": [
+    { "id": "one_time", "label": "One-time" },
+    { "id": "daily", "label": "Daily" },
+    { "id": "weekly", "label": "Weekly" },
+    { "id": "monthly", "label": "Monthly" },
+    { "id": "quarterly", "label": "Quarterly" },
+    { "id": "annually", "label": "Annually" }
+  ]
+}

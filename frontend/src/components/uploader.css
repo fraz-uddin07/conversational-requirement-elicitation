@@ -1,0 +1,101 @@
+
+/* General Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  } */
+  
+  /* Body Styling */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f6f8; /* Light background for contrast */
+  }
+  
+  /* Container Styling */
+  .uploader-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    background-color: #007bfc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .left-section h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  /* Right Section (Login Form) */
+  .right-section {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .meta-model-uploader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .meta-model-uploader h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .meta-model-uploader input[type="text"],
+  .meta-model-uploader input[type="password"],
+  .meta-model-uploader input[type="file"] {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .meta-model-uploader input[type="text"]:focus,
+  .meta-model-uploader input[type="password"]:focus,
+  .meta-model-uploader input[type="file"]:focus {
+    border-color: #007bfc;
+    outline: none;
+  }
+  
+  .meta-model-uploader button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bfc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .meta-model-uploader button:hover {
+    background-color: #005bb5; /* Darker shade for hover */
+  }
+  

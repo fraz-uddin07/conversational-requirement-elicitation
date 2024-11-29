@@ -1,0 +1,79 @@
+{
+    "name": "Construction Meta Model",
+    "report_types": [
+      { "id": "weather_report", "label": "Weather Report" },
+      { "id": "daily_log_report", "label": "Daily Log Report" },
+      { "id": "cost_report", "label": "Cost Report" },
+      { "id": "material_report", "label": "Material Report" },
+      { "id": "safety_report", "label": "Safety Report" }
+    ],
+    "visualization_types": [
+      { "id": "bar_chart", "label": "Bar Chart" },
+      { "id": "pie_chart", "label": "Pie Chart" },
+      { "id": "line_graph", "label": "Line Graph" },
+      { "id": "scatter_plot", "label": "Scatter Plot" },
+      { "id": "heat_map", "label": "Heat Map" }
+    ],
+    "filters": {
+      "date_range": true,
+      "departments": [
+        { "id": "underwriting", "label": "Underwriting" },
+        { "id": "claims", "label": "Claims" },
+        { "id": "actuarial", "label": "Actuarial" },
+        { "id": "sales_and_marketing", "label": "Sales and Marketing" },
+        { "id": "customer_service", "label": "Customer Service" },
+        { "id": "policy_administration", "label": "Policy Administration" },
+        { "id": "finance_and_accounting", "label": "Finance and Accounting" },
+        { "id": "legal_and_compliance", "label": "Legal and Compliance" },
+        { "id": "it", "label": "IT" },
+        { "id": "hr", "label": "HR" },
+        { "id": "risk_management", "label": "Risk Management" },
+        { "id": "reinsurance", "label": "Reinsurance" },
+        { "id": "product_development", "label": "Product Development" }
+      ],
+      "regions": [
+        { "id": "north", "label": "North" },
+        { "id": "south", "label": "South" },
+        { "id": "east", "label": "East" },
+        { "id": "west", "label": "West" },
+        { "id": "international", "label": "International" }
+      ]
+    },
+    "sub_reports": [
+      { "id": "department_breakdown", "label": "Department Breakdown" },
+      { "id": "product_line_details", "label": "Product Line Details" },
+      { "id": "monthly_trends", "label": "Monthly Trends" }
+    ],
+    "graph_options": {
+      "color_schemes": [
+        { "id": "blue", "label": "Blue" },
+        { "id": "green", "label": "Green" },
+        { "id": "red", "label": "Red" }
+      ],
+      "effects": [
+        { "id": "3d_effect", "label": "3D Effect" },
+        { "id": "interactive", "label": "Interactive" }
+      ]
+    },
+    "data_fields": [
+      { "id": "general_information", "label": "General Information" },
+      { "id": "materials_and_inventory", "label": "Materials and Inventory" },
+      { "id": "labor_information", "label": "Labor Information" },
+      { "id": "safety_information", "label": "Safety Information" },
+      { "id": "quality_control", "label": "Quality Control" }
+    ],
+    "delivery_formats": [
+      { "id": "pdf", "label": "PDF" },
+      { "id": "excel", "label": "Excel" },
+      { "id": "interactive_dashboard", "label": "Interactive Dashboard" }
+    ],
+    "frequency": [
+      { "id": "one_time", "label": "One-time" },
+      { "id": "daily", "label": "Daily" },
+      { "id": "weekly", "label": "Weekly" },
+      { "id": "monthly", "label": "Monthly" },
+      { "id": "quarterly", "label": "Quarterly" },
+      { "id": "annually", "label": "Annually" }
+    ]
+  }
+  

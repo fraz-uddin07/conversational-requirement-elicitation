@@ -6,13 +6,20 @@ const MetaModel = require('../models/MetaModel');
 
 // Start Conversation
 router.post('/start', async (req, res) => {
+  const { metaModel } = req.body;
   try {
-    const metaModel = await MetaModel.findOne().sort({ _id: -1 });
-    res.status(200).json({ metaModel: metaModel.data });
+    const model = await MetaModel.findOne({ "data.name": metaModel });
+    if (!model) {
+      return res.status(404).json({ error: 'Meta-model not found.' });
+    }
+
+    res.status(200).json({ metaModel: model.data });
   } catch (error) {
-    res.status(500).json({ error: 'Failed to start conversation. Unable to fetch Meta-Model from Server' });
+    console.error('Error starting conversation:', error);
+    res.status(500).json({ error: 'Failed to start conversation.' });
   }
 });
+
 
 // Save Conversation
 router.post('/save', async (req, res) => {
